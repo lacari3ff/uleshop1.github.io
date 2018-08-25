@@ -1,0 +1,234 @@
+body, html {
+    font-family: sans-serif;
+    background-color: #fff
+}
+#form_layout {
+    top: 100px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    padding: 20px;
+    left: 35%;
+    right: 35%;
+}
+
+#main {
+    box-shadow: 1px -1px 20px #999999;
+    background-color: #fff;
+    padding: 17px;
+    left: 0;
+    right: 50%;
+    margin: 50px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#main > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#phones {
+    box-shadow: 1px -1px 20px #999999;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 900px;
+    animation: phones01 20s infinite;
+    box-shadow: 1px 1px 20px #666666;
+}
+
+#telefoons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#telefoons > figure > a {
+    font-weight: bold;
+    color: inherit;
+    padding: 12px;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px #999999;
+}
+
+#phone-main {
+    text-align: ;
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 20px #999999;
+}
+
+#phone-main > center > iframe {
+    margin: 40px;
+    background-color: #fff;
+    padding: 12px;
+    box-shadow: 1px 1px 20px #999999;
+    border-radius: 12px;
+}
+
+#buy > img {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px #999999;
+}
+
+
+#telefoons > figure > img {
+    min-width: 400px;
+    padding: 12px;
+    margin-top: 60px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 20px #999999;
+    text-align: center;
+    max-width: 25%;
+    
+}
+
+#waarom {
+    background-color: #fff;
+    border-bottom: 1px solid #999999;
+    border-top: 1px solid #999999;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 900px;
+    padding: 30px;
+    box-shadow: 1px 1px 20px #999999;
+}
+#cookies {
+    background-color: rgba(1000, 1000, 1000, 0.98);
+    box-shadow: 1px -1px 20px #999999;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+#cookies > button {
+    margin: 4px;
+    font-size: 20px;
+    border: 1px solid #44444444;
+    background-color: #fff;
+    font-weight: bold;
+    height: 60px; width: 240px;  
+    animation: cookies_button_color01 .4s;
+    animation-fill-mode: forwards;
+}
+
+#cookies > button:hover {
+    animation: cookies_button_color .4s;
+    animation-fill-mode: forwards;
+}
+
+#cookies > a {
+    margin: 50px;
+    font-size: 20px;
+    color: #444444;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#underbar {
+    text-align: center;
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 1px -1px 20px #999999;
+}
+
+#underbar > a {
+    margin: 30px;
+}
+
+#form_layout > form > input {
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+#form_layout > form > select {
+    border: 0px;
+    border-bottom: 1px solid black;
+    border: 1px solid black;
+}
+
+#navigatie {
+    box-shadow: 1px 1px 20px #999999;
+    padding: 18px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #999999;
+    animation-fill-mode: forwards;
+}
+
+#navigatie > a:hover {
+    color: #777777;
+    border-bottom: 1.5px solid #777777;
+}
+
+#main > h1 {
+    font-weight: bold;
+}
+
+#main > strong {
+    font-weight: bold;
+    font-size: 20px
+}
+
+#main > ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+#navigatie > a {
+    margin: 8px;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+hr {
+    border: .5px solid #999999;
+}
+
+@keyframes cookies_button_color {
+    0% {color: #444444; background-color: #fff;}
+    100% {color: #fff; background-color: #303030;}
+}
+
+@keyframes cookies_button_color01 {
+    0% {color: #fff; background-color: #303030;}
+    100% {color: #444444; background-color: #fff;}
+}
+
+@keyframes phones01 {
+    0% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
+    40% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
+    50% {background-image: url(Images/T1%EF%BC%8D1920x1080.jpg)}
+    90% {background-image: url(Images/T1%EF%BC%8D1920x1080.jpg)}
+    100% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
+}
