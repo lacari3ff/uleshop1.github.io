@@ -28,6 +28,33 @@ body, html {
     text-decoration: none;
 }
 
+#showcase {
+    text-align: center;
+}
+
+#showcase > figure > a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+#showcase > figure {
+    display: inline-block;
+    background-color: #fff;
+    padding: 12px;
+    animation: showcase-hover-reverse .3s;
+    animation-fill-mode: forwards;
+}
+
+#showcase > figure:hover {
+    animation: showcase-hover .3s;
+    animation-fill-mode: forwards;
+}
+
+#showcase > figure > img {
+    max-width: 380px;
+    border-radius: 12px;
+}
 #phones {
     box-shadow: 1px -1px 20px #999999;
     background-attachment: fixed;
@@ -39,24 +66,8 @@ body, html {
     box-shadow: 1px 1px 20px #666666;
 }
 
-#telefoons {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-#telefoons > figure > a {
-    font-weight: bold;
-    color: inherit;
-    padding: 12px;
-    text-decoration: none;
-    background-color: #ffffff;
-    border-radius: 6px;
-    box-shadow: 1px 1px 20px #999999;
-}
-
 #phone-main {
-    text-align: ;
+    text-align: center;
     margin: 50px;
     background-color: #fff;
     padding: 20px;
@@ -68,7 +79,6 @@ body, html {
     background-color: #fff;
     padding: 12px;
     box-shadow: 1px 1px 20px #999999;
-    border-radius: 12px;
 }
 
 #buy > img {
@@ -80,27 +90,9 @@ body, html {
     box-shadow: 1px 1px 20px #999999;
 }
 
-
-#telefoons > figure > img {
-    min-width: 400px;
-    padding: 12px;
-    margin-top: 60px;
-    background-color: #fff;
-    border-radius: 18px;
-    box-shadow: 1px 1px 20px #999999;
-    text-align: center;
-    max-width: 25%;
-    
-}
-
 #waarom {
     background-color: #fff;
     border-bottom: 1px solid #999999;
-    border-top: 1px solid #999999;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 900px;
     padding: 30px;
     box-shadow: 1px 1px 20px #999999;
 }
@@ -228,7 +220,17 @@ hr {
 @keyframes phones01 {
     0% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
     40% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
-    50% {background-image: url(Images/T1%EF%BC%8D1920x1080.jpg)}
-    90% {background-image: url(Images/T1%EF%BC%8D1920x1080.jpg)}
+    50% {background-image: url(Images/armour5.jpg)}
+    90% {background-image: url(Images/armour5.jpg)}
     100% {background-image: url(Images/notch-screen-ulefone-x%EF%BC%8D1080-en.jpg)}
+}
+
+@keyframes showcase-hover {
+    0% {}
+    100% {box-shadow: 1px 1px 20px #999999;}
+}
+
+@keyframes showcase-hover-reverse {
+    0% {box-shadow: 1px 1px 20px #999999;}
+    100% {}
 }
